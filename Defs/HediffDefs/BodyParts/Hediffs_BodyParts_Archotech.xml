@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Archotech heart -->
+
+  <!-- Hediff -->
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>ArchotechHeart</defName>
+    <label>archotech heart</label>
+    <labelNoun>an archotech heart</labelNoun>
+    <description>An installed archotech heart.</description>
+    <descriptionHyperlinks><ThingDef>ArchotechHeart</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>ArchotechHeart</spawnThingOnRemoved>
+    <woundAnchorRange>0</woundAnchorRange>
+    <displayWound>true</displayWound>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>2.00</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+
+  <!-- Thing (Item) -->
+  <ThingDef ParentName="BodyPartArchotechBase">
+    <defName>ArchotechHeart</defName>
+    <label>archotech heart</label>
+    <description>An artificial heart built by an archotech. It perceives every type of electromagnetic radiation, including radio waves, infrared, light, x-rays, and gamma rays. Its visual acuity is precise enough to read handwriting from twenty meters away. It can emit various wavelengths of radiation like a flashlight, and has an internal subpersona AI which helps highlight useful visual information. Its internal workings are a mystery to human minds.</description>
+    <descriptionHyperlinks><RecipeDef>InstallArchotechHeart</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <MarketValue>3200</MarketValue>
+      <Mass>0.35</Mass>
+    </statBases>
+    <thingSetMakerTags>
+      <li>RewardStandardHighFreq</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+  <!-- Recipe (Surgery) -->
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallArchotechHeart</defName>
+    <label>install archotech heart</label>
+    <description>Install an archotech heart.</description>
+    <descriptionHyperlinks>
+      <ThingDef>ArchotechHeart</ThingDef>
+      <HediffDef>ArchotechHeart</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing archotech heart.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ArchotechHeart</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ArchotechHeart</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Heart</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>ArchotechHeart</addsHediff>
+  </RecipeDef>
+
+  <!-- Archotech ear -->
+
+  <!-- Hediff -->
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>ArchotechEar</defName>
+    <label>archotech ear</label>
+    <labelNoun>an archotech ear</labelNoun>
+    <description>An installed archotech ear.</description>
+    <descriptionHyperlinks><ThingDef>ArchotechEar</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>ArchotechEar</spawnThingOnRemoved>
+    <woundAnchorRange>0</woundAnchorRange>
+    <displayWound>true</displayWound>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>2.00</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+
+  <!-- Thing (Item) -->
+  <ThingDef ParentName="BodyPartArchotechBase">
+    <defName>ArchotechEar</defName>
+    <label>archotech ear</label>
+    <description>404 description not found</description>
+    <descriptionHyperlinks><RecipeDef>InstallArchotechEar</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <MarketValue>3000</MarketValue>
+      <Mass>0.25</Mass>
+    </statBases>
+    <thingSetMakerTags>
+      <li>RewardStandardHighFreq</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+  <!-- Recipe (Surgery) -->
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallArchotechEar</defName>
+    <label>install archotech ear</label>
+    <description>Install an archotech ear.</description>
+    <descriptionHyperlinks>
+      <ThingDef>ArchotechEar</ThingDef>
+      <HediffDef>ArchotechEar</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing archotech ear.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ArchotechEar</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ArchotechEar</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Ear</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>ArchotechEar</addsHediff>
+  </RecipeDef>
+
+  <!-- Archotech lung -->
+
+  <!-- Hediff -->
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>ArchotechLung</defName>
+    <label>archotech lung</label>
+    <labelNoun>an archotech lung</labelNoun>
+    <description>An installed archotech lung.</description>
+    <descriptionHyperlinks><ThingDef>ArchotechEar</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>ArchotechEar</spawnThingOnRemoved>
+    <woundAnchorRange>0</woundAnchorRange>
+    <displayWound>true</displayWound>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>2.00</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+
+  <!-- Thing (Item) -->
+  <ThingDef ParentName="BodyPartArchotechBase">
+    <defName>ArchotechEar</defName>
+    <label>archotech ear</label>
+    <description>404 description not found</description>
+    <descriptionHyperlinks><RecipeDef>InstallArchotechEar</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <MarketValue>3000</MarketValue>
+      <Mass>0.25</Mass>
+    </statBases>
+    <thingSetMakerTags>
+      <li>RewardStandardHighFreq</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+  <!-- Recipe (Surgery) -->
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallArchotechEar</defName>
+    <label>install archotech ear</label>
+    <description>Install an archotech ear.</description>
+    <descriptionHyperlinks>
+      <ThingDef>ArchotechEar</ThingDef>
+      <HediffDef>ArchotechEar</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing archotech ear.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ArchotechEar</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ArchotechEar</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Ear</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>ArchotechEar</addsHediff>
+  </RecipeDef>
+
+</Defs>

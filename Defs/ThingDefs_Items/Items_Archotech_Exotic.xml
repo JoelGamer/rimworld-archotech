@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Advanced AI Persona Core -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>AdvancedAIPersonaCore</defName>
+    <label>advanced persona core</label>
+    <description>missing_desc</description>
+    <graphicData>
+      <texPath>Things/Item/Special/AIPersonaCore</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <stackLimit>1</stackLimit>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MarketValue>8000</MarketValue>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>3.5</Mass>
+      <Flammability>0.1</Flammability>
+    </statBases>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
+    <drawGUIOverlay>false</drawGUIOverlay>
+    <tradeability>Sellable</tradeability>
+    <techLevel>Archotech</techLevel>
+    <tradeTags>
+      <li>ArchotechExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+
+  <!-- Godlike AI Persona Core -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>GodlikeAIPersonaCore</defName>
+    <label>godlike persona core</label>
+    <description>An insane incomprehensible AI, capable of defying reality it self. Archotech Master Scientists capable of even being able to utilize such AI, cannot describe such power contained in a single persona core. This, this thing is incomprehensible even by the creators of archotech.</description>
+    <graphicData>
+      <texPath>Things/Item/Special/AIPersonaCore</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <stackLimit>1</stackLimit>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MarketValue>100000</MarketValue>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Mass>20</Mass>
+      <Flammability>0.001</Flammability>
+    </statBases>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
+    <drawGUIOverlay>false</drawGUIOverlay>
+    <tradeability>Sellable</tradeability>
+    <techLevel>Archotech</techLevel>
+    <tradeTags>
+      <li>ArchotechExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+
+</Defs>

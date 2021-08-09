@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- True Archotech arm -->
+
+  <!-- Hediff -->
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>TrueArchotechArm</defName>
+    <label>true archotech arm</label>
+    <labelNoun>a true archotech arm</labelNoun>
+    <description>An installed true archotech arm.</description>
+    <descriptionHyperlinks><ThingDef>TrueArchotechArm</ThingDef></descriptionHyperlinks>
+    <comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>fist</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>28</power>
+            <cooldownTime>2</cooldownTime>
+            <soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+            <soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+          </li>
+        </tools>
+      </li>
+    </comps>
+    <spawnThingOnRemoved>TrueArchotechArm</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>3.00</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+  <!-- Thing (Item) -->
+  <ThingDef ParentName="BodyPartArchotechBase">
+    <defName>TrueArchotechArm</defName>
+    <label>true archotech arm</label>
+    <description>missing_desc</description>
+    <descriptionHyperlinks><RecipeDef>InstallTrueArchotechArm</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <MarketValue>5600</MarketValue>
+      <Mass>6</Mass>
+    </statBases>
+    <thingSetMakerTags>
+      <!-- <li>RewardStandardHighFreq</li> -->
+    </thingSetMakerTags>
+  </ThingDef>
+
+  <!-- Recipe (Surgery) -->
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallTrueArchotechArm</defName>
+    <label>install true archotech arm</label>
+    <description>Install a true archotech arm.</description>
+    <descriptionHyperlinks>
+      <ThingDef>TrueArchotechArm</ThingDef>
+      <HediffDef>TrueArchotechArm</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing true archotech arm.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>TrueArchotechArm</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>TrueArchotechArm</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Shoulder</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>TrueArchotechArm</addsHediff>
+  </RecipeDef>
+
+</Defs>
